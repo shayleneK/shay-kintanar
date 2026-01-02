@@ -71,6 +71,7 @@ export default function RootLayout({
       <body className="bg-background min-h-screen">
         <div className="flex h-30">
           <CardNav
+            logo=""
             logoAlt="Company Logo"
             items={items}
             baseColor="#fff"
