@@ -1,4 +1,17 @@
-export const projects = [
+export type Link = {
+  type: "github" | "figma";
+  href: string;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  links?: Link[]; // optional because some projects don't have links
+};
+
+export const projects: Project[] = [
   {
     id: "1",
     title: "Snorlax's Stash",
