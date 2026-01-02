@@ -5,7 +5,7 @@ import Image from "next/image";
 export default async function ProjectDetails({
   params,
 }: {
-  params: Promise<{ productId: string }>;
+  params: Promise<{ projectId: string }>;
 }) {
   const projectId = (await params).projectId;
   const project = projects.find((p) => p.id === projectId);
