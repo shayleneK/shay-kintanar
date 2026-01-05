@@ -39,7 +39,7 @@ export default function Projects() {
                 <Badge key={index} type={link.type} href={link.href} />
               ))}
             </div>
-            <p>{project.description}</p>
+            <p>{project.brief}</p>
             <div className="card-actions justify-end">
               <Link
                 href={`/projects/${project.id}`}
